@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Вступительные Задания PDFfiller JS-React-School
 
 ## Всем привет. 
@@ -183,3 +184,7 @@ npm test
 ## 7. Зарегистрируйте проблему
 
 Если в ходе выполнения задачи что-то пошло не так, [зарегистрируйте проблему](https://github.com/pdffiller/react-school-entrants-tasks-js/issues/new) в данном репозитории на сайте github.
+=======
+# oleksandr-ladyzhenskyi-tasks
+ChinaNumbaTwo
+>>>>>>> 34da179c8b51c29e4177d4ab570f9ad6e5e77c58
