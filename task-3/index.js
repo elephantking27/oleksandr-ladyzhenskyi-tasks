@@ -1,11 +1,11 @@
 class Emitter {
-  
+
   /**
    * Создает экземпляр класса Emitter.
    * @memberof Emitter
    */
   constructor() {
-    // Ваш код
+    this.events = {};
   }
 
   /**
@@ -16,7 +16,12 @@ class Emitter {
    * @memberof Emitter
    */
   on(event, handler) {
-    // Ваш код
+    const { events } = this;
+
+    if (!events.hasOwnProperty(event)) {
+      events[event] = [];
+    }
+    events[event].push(handler);
   }
 
   /**
@@ -28,7 +33,11 @@ class Emitter {
    * @memberof Emitter
    */
   emit(event, data) {
-    // Ваш код
+    const { events } = this;
+
+    if (events.hasOwnProperty(event)) {
+      events[event].forEach(fn => fn(data));
+    }
   }
 }
 

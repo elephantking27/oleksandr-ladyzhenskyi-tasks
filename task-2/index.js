@@ -7,8 +7,18 @@
  * @param {Number[]} arr2 - массив произвольной длинны произвольных чисел
  * @returns {Boolean}
  */
+
 function haveSameItems(arr1, arr2) {
-  return true;
+  return arr1.length === arr2.length && [...arr1].every(i => arr2.includes(i));
 }
+/*
+function haveSameItems(arr1, arr2) {
+  const summaries = [...arguments].map(arr => arr.reduce((previous, current) => previous += current, 0)); // проходит тесты, хоть и неправильный
+  if (summaries[0] === summaries[1]) {
+    return true;
+  }
+  return false;
+}
+*/
 
 export default haveSameItems;
